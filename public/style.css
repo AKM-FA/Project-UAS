@@ -1,0 +1,422 @@
+:root {
+  --dl-size-size-large: 144px;
+  --dl-size-size-small: 48px;
+  --dl-size-size-medium: 96px;
+  --dl-size-size-xlarge: 192px;
+  --dl-size-size-xsmall: 16px;
+  --dl-space-space-unit: 16px;
+  --dl-size-size-xxlarge: 288px;
+  --dl-color-scheme-white: #FFFFFF;
+  --dl-size-size-maxwidth: 1144px;
+  --dl-radius-radius-round: 50%;
+  --dl-color-scheme-green80: #105749ff;
+  --dl-space-space-halfunit: 8px;
+  --dl-space-space-sixunits: 96px;
+  --dl-space-space-twounits: 32px;
+  --dl-color-scheme-green100: #0c4237ff;
+  --dl-color-scheme-orange80: #ffc78bff;
+  --dl-color-scheme-yellow20: #fffef3ff;
+  --dl-color-scheme-yellow80: #fff6a7ff;
+  --dl-radius-radius-radius2: 2px;
+  --dl-radius-radius-radius4: 4px;
+  --dl-radius-radius-radius8: 8px;
+  --dl-space-space-fiveunits: 80px;
+  --dl-space-space-fourunits: 50px;
+  --dl-color-scheme-orange100: #ffad61ff;
+  --dl-color-scheme-orange200: rgb(255, 142, 36);
+  --dl-radius-radius-radius16: 16px;
+  --dl-space-space-eightunits: 80px;
+  --dl-space-space-threeunits: 48px;
+  --dl-color-scheme-lightgreen: #c7ff9bff;
+  --dl-space-space-oneandhalfunits: 24px;
+}
+.button {
+  color: #0C2D57;
+  cursor: pointer;
+  display: inline-block;
+  padding: 12px 24px;
+  border-color: var(--dl-color-scheme-green100);
+  border-width: 2px;
+  border-radius: 32px;
+  background-color: var(--dl-color-scheme-white);
+}
+
+.button-secondary {
+  font-style: normal;
+  transition: 0.3s;
+  font-family: Lexend;
+  font-weight: 500;
+  line-height: 1;
+  border-color: black;
+  margin-right: var(--dl-space-space-unit);
+}
+.button-secondary:hover {
+  color: var(--dl-color-scheme-white);
+  background-color: #0C2D57;
+}
+.button-primary {
+  color: var(--dl-color-scheme-white);
+  font-style: normal;
+  transition: 0.3s;
+  font-family: Lexend;
+  font-weight: 500;
+  line-height: 1;
+  border-color: #f38f1c;
+  background-color: #f38f1c;
+}
+.button-primary:hover {
+  color: #fe8903;
+  background-color: white;
+}
+.navbar-container {
+  top: 0;
+  width: 100%;
+  display: flex;
+  z-index: 1000;        
+  position: sticky;
+  padding-top: var(--dl-space-space-oneandhalfunits);
+  padding-bottom: var(--dl-space-space-oneandhalfunits);
+  justify-content: center;
+  background-color: var(--dl-color-scheme-white);
+}
+.navbar-burger-menu {
+  display: none;
+}
+.max-width {
+  width: 100%;
+  display: flex;
+  max-width: var(--dl-size-size-maxwidth);
+  align-items: center;
+  padding-left: var(--dl-space-space-oneandhalfunits);
+  padding-right: var(--dl-space-space-oneandhalfunits);
+  justify-content: space-between;
+}
+.button-gradient {
+  display: flex;
+  font-size: 18px;
+  background: linear-gradient(90deg, #e14f49 0%, #d39752 50%, #FFF6A7 100%);
+  font-style: normal;
+  transition: 0.3s;
+  align-items: center;
+  font-weight: 700;
+  line-height: 0.9;
+  padding: 20px 32px; /* Combined padding shorthand */
+  border: none; /* Remove border */
+  background-size: 200% 100%; /* Adjust background size */
+  background-position: right; /* Start gradient from the right */
+  margin-right: 20px;
+}
+.button-gradient:hover {
+  color: var(--dl-color-scheme-white);
+  background: unset;
+  border-color: var(--dl-color-scheme-white);
+}
+.button-transparent {
+  color: var(--dl-color-scheme-white);
+  font-size: 18px;
+  font-style: normal;
+  transition: 0.3s;
+  font-weight: 700;
+  line-height: 0.9;
+  padding-top: 20px;
+  border-color: var(--dl-color-scheme-white);
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 20px;
+  background-color: transparent;
+}
+.button-transparent:hover {
+  color: var(--dl-color-scheme-orange100);
+  background-color: var(--dl);
+}
+.section-container {
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  padding-top: var(--dl-space-space-eightunits);
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-eightunits);
+}
+
+.map {
+  background-color: #cfddfa;
+
+}
+.hero-container {
+  background-image: url(img/bgmain.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+.home-section2{
+  background-color: #0C2D57;
+}
+.bg-transparent {
+  background-color: transparent;
+}
+.question-content {
+  display: flex;
+  overflow: hidden;
+  max-height: 0;
+  transition: 0.3s;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  border-color: rgba(44, 39, 33, 0.08);
+  border-width: 1px;
+  padding-left: var(--dl-space-space-twounits);
+  border-radius: 12px;
+  margin-bottom: var(--dl-space-space-unit);
+  padding-right: var(--dl-space-space-twounits);
+  flex-direction: column;
+  padding-bottom: 20px;
+  justify-content: space-between;
+  background-color: var(--dl-color-scheme-white);
+}
+.footer-column {
+  width: 15%;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: var(--dl-space-space-oneandhalfunits);
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.beforeHeading {
+  font-size: 14px;
+  font-style: normal;
+  font-family: Urbanist;
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.brandName {
+  font-size: 20px;
+  font-style: normal;
+  font-family: Urbanist;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.navbarLink {
+  font-size: 16px;
+  font-style: normal;
+  font-family: Titillium Web;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: none;
+  text-decoration: none;
+}
+.Content {
+  font-size: 16px;
+  font-family: Titillium Web;
+  font-weight: 400;
+  line-height: 1.15;
+  text-transform: none;
+  text-decoration: none;
+}
+
+
+
+/*footer*/
+.contact-column {
+  float: left;
+  width: 30%;
+}
+.cp-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 30px;
+  float: left;
+}
+.sosmed-column {
+  float: left;
+  text-align: left;
+}
+.sosmed-image {
+  width: 30px;
+  height: 30px;
+}
+.sosmed-text {
+  display: block;
+  text-align: left;
+  margin: 0;
+}
+.developer-container {
+  clear: both;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.developer-column {
+  float: left;
+  width: 30%;
+}
+
+.developer-info {
+  margin-bottom: 20px;
+}
+
+.developer-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 30px;
+  float: left;
+}
+
+.developer-text {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.home-text100 {
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.home-text101 {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.home-text102 {
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.home-text103 {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.home-text104 {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.home-text105 {
+  display: block;
+  font-size: 16px;
+}
+
+/*box*/
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Ensure it's on top of other elements */
+}
+
+.popup-form {
+  background-color: var(--dl-color-scheme-white);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Drop shadow */
+  position: relative; /* Required for positioning within the pop-up */
+  width: 100%; /* Ensure the form takes the full width of the pop-up */
+  max-width: 400px; /* Set a maximum width to prevent it from getting too wide */
+  box-sizing: border-box; /* Ensure padding and border are included in total width */
+  height: auto; /* Automatically adjust the height based on content */
+  min-height: 200px; /* Ensure the form is tall enough initially (adjust as needed) */
+  overflow: hidden; /* Prevent scrolling inside the pop-up */
+}
+
+.popup-form h2 {
+  margin: 0;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 24px;
+  color: var(--dl-color-scheme-dark); /* Adjust color as needed */
+}
+
+.popup-form input {
+  width: 100%; /* Full width of the form minus padding */
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Include padding and border in total width */
+}
+
+.popup-form button {
+  padding: 10px 20px;
+  background-color: var(--dl-color-scheme-orange100);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.popup-close-button {
+  position: absolute;
+  top: 20px; /* Position at the top with some padding */
+  right: 20px; /* Align to the right */
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  z-index: 1; /* Ensure it's on top of other elements */
+}
+
+.message-box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the message box */
+  background-color: var(--dl-color-scheme-white);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Drop shadow */
+  z-index: 10000; /* Ensure it's on top of other elements */
+  text-align: center;
+  font-size: 18px;
+  color: var(--dl-color-scheme-dark); /* Adjust color as needed */
+}
+
+
+
+/*full screen*/
+
+.fullscreen-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Ensure it's on top of other elements */
+}
+
+.fullscreen-image img {
+  max-width: 90%;
+  max-height: 90%;
+}
